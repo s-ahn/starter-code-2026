@@ -1,4 +1,4 @@
-# 1. Pre course
+TEST # 1. Pre course
 ## 1.1  Start the project
 
 Clone this repo to your computer. Once you have all the files on you computer, check out the instructions in the file `README.md` and follow the steps. 
