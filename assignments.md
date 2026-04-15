@@ -32,7 +32,7 @@ Add some content to the page `about.html`.
 
 
 ## 2.3 Fix the image bug
-There is a bug somewhere in the code. The images are not rendering correctly. Use any tools (AI) to understand where the problem is coming from and to fix it. Document your process (you can add notes to this file)
+There is a bug somewhere in the code. The images are not rendering correctly. Use any tools (AI) to understand where the problem is coming from and to fix it. Document your process (you can add notes to this file) >> How to use AI in the VS Studio Code directly?
 
 **Goal:** Be able to use  AI support to track down a bug and accept the solution. 
 
