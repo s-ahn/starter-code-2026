@@ -1,4 +1,4 @@
-TEST # 1. Pre course
+# 1. Pre course
 ## 1.1  Start the project
 
 Clone this repo to your computer. Once you have all the files on you computer, check out the instructions in the file `README.md` and follow the steps. 
@@ -32,7 +32,7 @@ Add some content to the page `about.html`.
 
 
 ## 2.3 Fix the image bug
-There is a bug somewhere in the code. The images are not rendering correctly. Use any tools (AI) to understand where the problem is coming from and to fix it. Document your process (you can add notes to this file)
+There is a bug somewhere in the code. The images are not rendering correctly. Use any tools (AI) to understand where the problem is coming from and to fix it. Document your process (you can add notes to this file) >> How to use AI in the VS Studio Code?
 
 **Goal:** Be able to use  AI support to track down a bug and accept the solution. 
 
