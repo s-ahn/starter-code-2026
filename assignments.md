@@ -32,7 +32,17 @@ Add some content to the page `about.html`.
 
 
 ## 2.3 Fix the image bug
-There is a bug somewhere in the code. The images are not rendering correctly. Use any tools (AI) to understand where the problem is coming from and to fix it. Document your process (you can add notes to this file) >> How to use AI in the VS Studio Code?
+There is a bug somewhere in the code. The images are not rendering correctly. Use any tools (AI) to understand where the problem is coming from and to fix it. Document your process (you can add notes to this file) 
+
+> What was wrong:
+The database stores image filenames (espresso.svg, cappuccino.svg, latte.svg, muffin.svg) for each menu item
+shop.html wasn't displaying them, only showing item name, price, description, and the Add button
+Solution applied:
+
+Added the image display section to shop.html with the same structure as index.html
+Used url_for('static', filename='img/' ~ item['image']) to properly render the SVG files
+Includes a fallback placeholder div if an image is missing
+
 
 **Goal:** Be able to use  AI support to track down a bug and accept the solution. 
 
