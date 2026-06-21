@@ -1,1 +1,2 @@
 Flask>=2.0
+gunicorn>=21.0  # production WSGI server used to run the app when deployed

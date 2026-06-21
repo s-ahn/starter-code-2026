@@ -1,0 +1,20 @@
+# Render Blueprint — tells Render how to build and run this app.
+# With this file in the repo, deploying is one click: New > Blueprint > pick repo.
+# Docs: https://render.com/docs/blueprint-spec
+services:
+  - type: web            # a web service (something that serves HTTP)
+    name: cafe-cozy
+    runtime: python
+    plan: free
+
+    # Build step: install dependencies, then create the SQLite DB + sample menu.
+    # init_db.py runs here because the free tier's disk is wiped on each deploy.
+    buildCommand: "pip install -r requirements.txt && python init_db.py"
+
+    # Start step: run the app with gunicorn, binding to the port Render assigns
+    # via the $PORT environment variable. "app:app" = the `app` object in app.py.
+    startCommand: "gunicorn app:app --bind 0.0.0.0:$PORT"
+
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.3"
