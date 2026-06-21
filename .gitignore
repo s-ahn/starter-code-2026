@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pptx-venv/
+.verify-venv/
+
+# Flask instance folder (the database created by init_db.py)
+instance/coffee.db
+
+# Python session — generated artifacts
+python-session/cafe_data.db
+python-session/kpi_*.csv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.myvenv/
