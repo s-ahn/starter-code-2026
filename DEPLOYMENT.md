@@ -83,13 +83,26 @@ Reading the two important lines:
 
 ## 3. Deploy it (step by step)
 
-**Prerequisites:** the project is pushed to a GitHub repository.
+**Prerequisites:** a free GitHub account and a free Render account.
+
+### Step 0: Fork this repo (make your own copy)
+
+1. Open the course repo on GitHub and click **Fork** (top right).
+2. Leave the defaults and click **Create fork**. You now have your *own* copy of
+   the project under your GitHub account — this is what you'll deploy and change.
+
+> 🧠 **Concept:** a fork is your personal copy of someone else's repo. You deploy
+> *your* fork, so your changes (and your live site) are yours — the original is
+> untouched. The deploy config (`render.yaml`) is already included in the copy,
+> so there's nothing extra to set up.
+
+### Step 1: Deploy your fork on Render
 
 1. Go to <https://render.com> and sign up (you can sign in with GitHub).
 2. Click **New +** → **Blueprint**.
    - "Blueprint" means "read the `render.yaml` in my repo and set everything up
-     for me." This is why we committed that file.
-3. Connect your GitHub account and select the **Café Cozy** repository.
+     for me." This is why that file is in the repo.
+3. Connect your GitHub account and select **your fork** of the repository.
 4. Render reads `render.yaml`, shows you the service it will create, and you
    click **Apply**.
 5. Watch the **Logs** tab. You'll see, in order:
